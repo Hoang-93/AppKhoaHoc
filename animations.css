@@ -1,0 +1,26 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes bounceIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+.animated-header .fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animated-header .slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+.animated-header .bounce-in {
+    animation: bounceIn 1.5s ease-in-out;
+}
